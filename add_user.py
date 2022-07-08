@@ -1,11 +1,15 @@
-from flask import flash
+from flask import flash, Flask
 from flask_login import UserMixin, LoginManager
 from flask_sqlalchemy import SQLAlchemy
 from werkzeug.security import check_password_hash
 
 db = SQLAlchemy()
 
-#manager = LoginManager(app)
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.secret_key = 'real secret key'
+manager = LoginManager(app)
 
 
 class Users(db.Model, UserMixin):
@@ -19,9 +23,9 @@ class Users(db.Model, UserMixin):
         return '<Users %r>' % self.id
 
 
-# @manager.user_loader
-# def load_user(user_id):
-#     return Users.get(user_id)
+@manager.user_loader
+def load_user(user_id):
+    return Users.query.get(user_id)
 
 
 def check_auth(login, password):
