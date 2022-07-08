@@ -12,6 +12,7 @@ app.secret_key = 'real secret key'
 manager = LoginManager(app)
 
 
+
 class Users(db.Model, UserMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), primary_key=False)

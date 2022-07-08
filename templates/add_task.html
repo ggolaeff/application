@@ -9,5 +9,45 @@
 </head>
 <body>
 Добавление задачи
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<form method="POST">
+    <table>
+        <tr>
+            <td>Название</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Дата сдачи</td>
+            <td><input type="datetime-local" name="end_date"></td>
+        </tr>
+        <tr>
+            <td>Кому</td>
+            <td><select class="form-select" name="to_user" method="GET">
+                {% for name in names %}
+                <option value="{{name}}" SELECTED>{{name}}</option>"
+                {% endfor %}
+            </select></td>
+        </tr>
+        <tr>
+            <td>Текст задачи</td>
+            <td><input type="text" name="text_task"></td>
+        </tr>
+        <tr>
+            <td>Файлы</td>
+            <td><input type="text" name="files"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Отправить задание"></td>
+        </tr>
+    </table>
+</form>
 </body>
 </html>
