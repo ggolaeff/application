@@ -1,14 +1,15 @@
 from flask import flash, Flask
 from flask_login import UserMixin, LoginManager
 from flask_sqlalchemy import SQLAlchemy
+
 from werkzeug.security import check_password_hash
 
-db = SQLAlchemy()
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///user_n_tasks.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.secret_key = 'real secret key'
+db = SQLAlchemy(app)
 manager = LoginManager(app)
 
 
