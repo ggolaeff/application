@@ -10,6 +10,7 @@ class Tasks(db.Model):
     files = db.Column(db.Text, primary_key=False)
     begin_date = db.Column(db.DateTime, primary_key=False)
     end_date = db.Column(db.DateTime, primary_key=False)
+    status = db.Column(db.String(100), primary_key=False)
 
     def __repr__(self):
         return '<Task %r>' % self.id

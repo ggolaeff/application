@@ -20,20 +20,43 @@
 <form action="/logout" method="GET">
     <button class="w-100 btn btn-lg btn-primary" type="submit"> Выйти </button>
 </form>
-<form method="get">
-    <h4>Задачи без дедлайна</h4>
-    {% for task in tasks %}
-    {% if task.end_date == None %}
-    <h3>{{ task }}</h3>
-    {% endif %}
-    {% endfor %}
+<form action="/view_task" method="get">
+
+    {% if role == 1 %}
+
     <h4>Задачи с дедлайном</h4>
     {% for task in tasks %}
-    {% if task.end_date != None %}
-    <h3>{{ task }}</h3>
-    {% endif %}
+        {% if task.end_date != None %}
+        <h3>{{ task.name_task }} {{ deadline_list[task.id] }} {{ task_list[task.id] }} {{ task.status }}</h3>
+        <button class="w-100 btn btn-lg btn-primary" name="{{ task.id }}" type="submit">Посмотреть задачу</button>
+        {% endif %}
+    {% endfor %}
+    <h4>Задачи без дедлайна</h4>
+    {% for task in tasks %}
+        {% if task.end_date == None %}
+        <h3>{{ task.name_task }} {{ task_list[task.id] }} {{ task.status }}</h3>
+        <button class="w-100 btn btn-lg btn-primary" name="{{ task.id }}" type="submit">Посмотреть задачу</button>
+        {% endif %}
     {% endfor %}
 
+    {% else %}
+
+    <h4>Задачи с дедлайном</h4>
+    {% for task in tasks %}
+        {% if task.end_date != None %}
+        <h3>{{ task.name_task }} {{ deadline_list[task.id] }} {{ task.status }}</h3>
+        <button class="w-100 btn btn-lg btn-primary" name="{{ task.id }}" type="submit">Посмотреть задачу</button>
+        {% endif %}
+    {% endfor %}
+    <h4>Задачи без дедлайна</h4>
+    {% for task in tasks %}
+        {% if task.end_date == None %}
+        <h3>{{ task.name_task }} {{ task.status }}</h3>
+            <button class="w-100 btn btn-lg btn-primary" name="{{ task.id }}" type="submit">Посмотреть задачу</button>
+        {% endif %}
+    {% endfor %}
+
+    {% endif %}
 </form>
 </body>
 </html>

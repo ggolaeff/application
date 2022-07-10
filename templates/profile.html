@@ -9,13 +9,13 @@
 </head>
 <body>
 {{ name_user }} {{ role }}
-Профиль
 <h2>Контакт для связи</h2>
 <form method="post">
+    <h5 method="get">Выбран для контакта: {{ begin_contact }}</h5>
 <div class="form-check" method="get">
-              <input id="email" name="check_contact" type="radio" class="form-check-input" checked="" required="" value="email">
+              <input id="email" name="check_contact" type="radio" class="form-check-input" required="" value="email">
               <label class="form-check-label" for="email" >Почта</label>
-                <p><input type="text" name="email_text" class="colortext" placeholder="{{ begin_contact }}">
+                <p><input type="text" name="email_text" class="colortext">
             </div>
 <div class="form-check" method="get">
               <input id="phone" name="check_contact" type="radio" class="form-check-input" required="" value="phone">
@@ -29,9 +29,25 @@
             </div>
     <button class="w-100 btn btn-lg btn-primary" type="submit">Принять</button>
     </form>
+
+<h2>Изменение пароля</h2>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<form method="post">
+<p><input type="text" name="last_password" class="colortext" placeholder="Старый пароль">
+<p><input type="text" name="new_password" class="colortext" placeholder="Новый пароль">
+<p><input type="text" name="rep_new_password" class="colortext" placeholder="Повторите пароль">
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Принять</button>
+    </form>
     <form action="/tasks" method="get">
     <button class="w-100 btn btn-lg btn-primary" type="submit">Закрыть</button>
     </form>
-
 </body>
 </html>
