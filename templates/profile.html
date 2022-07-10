@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Профиль</title>
+</head>
+<body>
+{{ name_user }} {{ role }}
+Профиль
+<h2>Контакт для связи</h2>
+<form method="post">
+<div class="form-check" method="get">
+              <input id="email" name="check_contact" type="radio" class="form-check-input" checked="" required="" value="email">
+              <label class="form-check-label" for="email" >Почта</label>
+                <p><input type="text" name="email_text" class="colortext" placeholder="{{ begin_contact }}">
+            </div>
+<div class="form-check" method="get">
+              <input id="phone" name="check_contact" type="radio" class="form-check-input" required="" value="phone">
+              <label class="form-check-label" for="phone">Телефон</label>
+    <p><input type="text" name="phone_text" class="colortext">
+            </div>
+<div class="form-check" method="get">
+              <input id="other" name="check_contact" type="radio" class="form-check-input" required="" value="other">
+              <label class="form-check-label" for="other">Другое:</label>
+    <p><input type="text" name="other_text" class="colortext">
+            </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Принять</button>
+    </form>
+    <form action="/tasks" method="get">
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Закрыть</button>
+    </form>
+
+</body>
+</html>

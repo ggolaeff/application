@@ -5,12 +5,35 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Задачи</title>
+    <title>Задачи </title>
 </head>
 <body>
-<form action="/add_tasks">
-<button class="w-100 btn btn-lg btn-primary" type="submit">добавить</button>
-    </form>
+<form action="/add_tasks" method="GET">
 Задачи
+   {% if role == 0 %}
+<button class="w-100 btn btn-lg btn-primary" type="submit">добавить</button>
+{% endif %}
+</form>
+<form action="/profile" method="GET">
+    <button class="w-100 btn btn-lg btn-primary" type="submit" name="{{ name_user }}"> {{ name_user }} </button>
+    </form>
+<form action="/logout" method="GET">
+    <button class="w-100 btn btn-lg btn-primary" type="submit"> Выйти </button>
+</form>
+<form method="get">
+    <h4>Задачи без дедлайна</h4>
+    {% for task in tasks %}
+    {% if task.end_date == None %}
+    <h3>{{ task }}</h3>
+    {% endif %}
+    {% endfor %}
+    <h4>Задачи с дедлайном</h4>
+    {% for task in tasks %}
+    {% if task.end_date != None %}
+    <h3>{{ task }}</h3>
+    {% endif %}
+    {% endfor %}
+
+</form>
 </body>
 </html>

@@ -1,7 +1,7 @@
 from datetime import datetime
 
-from flask import render_template, request, redirect, session
-from flask_login import login_required, login_user
+from flask import render_template, request, redirect, session, url_for
+from flask_login import login_required, login_user, logout_user
 
 from add_user import *
 from task_edit import *
@@ -34,6 +34,8 @@ def sign():
     if check_auth(id, password):
         login_user(load_user(id))
         session[str(id)] = id
+        session['email'] = load_user(id).email
+
         return redirect('tasks')
     else:
         return render_template("sign.html")
@@ -42,7 +44,37 @@ def sign():
 @app.route('/tasks', methods=['GET', 'POST'])
 @login_required
 def tasks():
-    return render_template("tasks.html")
+
+    user = Users.query.filter_by(id=session['_user_id']).first()
+    role = user.role
+    name_user = user.name
+    if role == 0:
+        tasks = Tasks.query.filter_by(from_user_id=session['_user_id']).all()
+    else:
+        tasks = Tasks.query.filter_by(to_user_id=session['_user_id']).all()
+
+    return render_template("tasks.html", name_user=name_user, role=role, tasks=tasks)
+
+
+@app.route('/profile', methods=['GET', 'POST'])
+@login_required
+def profile():
+    user = Users.query.filter_by(id=session['_user_id']).first()
+    contact_begin = session['email']
+    role = user.role
+    name_user = user.name
+
+    if role == 0:
+        role = 'Студент'
+    else:
+        role = 'Преподаватель'
+    check_contact = request.form.get('check_contact')
+    contact = request.form.get(f'{check_contact}_text')
+    if request.method == "POST":
+        user.email = contact
+        db.session.commit()
+        session['email'] = contact
+    return render_template("profile.html", name_user=name_user, role=role, begin_contact=contact_begin)
 
 
 @app.route('/add_tasks', methods=['GET', 'POST'])
@@ -87,6 +119,13 @@ def add_task():
     except AttributeError:
         flash("ошибка создания задачи")
         return render_template("add_task.html", names=names)
+
+
+@app.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('sign'))
 
 
 if __name__ == "__main__":
