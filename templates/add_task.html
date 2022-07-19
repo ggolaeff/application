@@ -1,57 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>Добавление задачи</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
-Добавление задачи
-{% with messages = get_flashed_messages() %}
-  {% if messages %}
-    <ul class=flashes>
-    {% for message in messages %}
-      <li>{{ message }}</li>
-    {% endfor %}
-    </ul>
-  {% endif %}
-{% endwith %}
-<form method="POST">
-    <table>
-        <tr>
-            <td>Название</td>
-            <td><input type="text" name="name"></td>
-        </tr>
-        <tr>
-            <td>Дата сдачи</td>
-            <td><input type="datetime-local" name="end_date"></td>
-        </tr>
-        <tr>
-            <td>Кому</td>
-            <td><select class="form-select" name="to_user" method="GET">
-                {% for name in names %}
-                <option value="{{name}}" SELECTED>{{name}}</option>"
-                {% endfor %}
-            </select></td>
-        </tr>
-        <tr>
-            <td>Текст задачи</td>
-            <td><input type="text" name="text_task"></td>
-        </tr>
-        <tr>
-            <td>Файлы</td>
-            <td><input type="text" name="files"></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Отправить задание"></td>
-        </tr>
-    </table>
-    </form>
-        <form action="/tasks" method="get">
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Закрыть</button>
-    </form>
+    <div id="rectangle8"></div>
+    <div id="vector7"></div>
+<form action="handler.php">
+<h38>Добавление задачи</h38>
+<h39>Название работы</h39>
+<h40><input type="text1" class="demo-1" placeholder="Название работы"></h40>
 
+<h41>Дата и время сдачи работы</h41>
+<h42><input type="text1" class="demo-1" placeholder="dd.mm.yyyy HH:MM"></h42>
+
+<h43>Для кого задача</h43>
+<h44><input type="text1" class="demo-1" placeholder="Фамилия"></h44>
+
+<h45><input type="text2" class="demo-1" placeholder="Текст"></h45>
+
+<p><button11>
+    <img src="{{ url_for('static', filename='img/скрепка.png') }}" alt="" style="vertical-align:middle">
+    Прикрепить файлы
+</button11></p>
+
+<p><button12>
+    Отмена
+    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt="" style="vertical-align:middle">
+</button12></p>
+
+<p><button13>
+    Отправить задание
+    <img src="{{ url_for('static', filename='img/Arrow.png') }}" alt="" style="vertical-align:middle">
+</button13></p>
+
+</form>
 </body>
 </html>

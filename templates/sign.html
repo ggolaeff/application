@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>{% block title %}{% endblock %}</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="rectangle"></div>
+    <div id="vector1"></div>
+<form action="handler.php">
+<h2>Вход</h2>
+<h3>Логин</h3>
+    <h4><input type="text" class="demo-1" placeholder="Логин"></h4>
+<h5>Пароль</h5>
+     <h6><input type="text" class="demo-1" placeholder="Пароль"></h6>
+
+<p><button>
+    Войти
+    <img src="{{ url_for('static', filename='img/Arrow.png') }}" alt="" style="vertical-align:middle">
+</button></p>
+
+</form>
+</body>
+</html>
