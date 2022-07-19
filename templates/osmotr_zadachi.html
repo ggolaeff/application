@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Осмотр задачи</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="rectangle7"></div>
+    <div id="vector5"></div>
+    <div id="vector6"></div>
+<form action="handler.php">
+<h24>Название работы</h24>
+<h25>Группа</h25>
+<h26>Фамилия И.О.</h26>
+
+<p><button3>
+    Удалить задачу
+    <img src="{{ url_for('static', filename='img/корзина.png') }}" alt="" style="vertical-align:middle">
+</button3></p>
+<h28><input type="text" class="demo-1" placeholder="Подпись к задаче"></h28>
+<button4>Прикрепленные файлы</button4>
+<h30>Статус задачи:</h30>
+<button5>Прочтено</button5>
+<button6>На проверке</button6>
+<button7>Зачтено</button7>
+<button8>Не зачтено</button8>
+<h35><input type="text" class="demo-1" placeholder="Контакт для связи: _____________"></h35>
+
+<p><button9>
+    Продвинуть задачу
+    <img src="{{ url_for('static', filename='img/Arrow2.png') }}" alt ="" style="vertical-align:middle">
+</button9></p>
+
+<p><button10>
+    Закрыть
+    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt ="" style="vertical-align:middle">
+</button10></p>
+
+</form>
+</html>
+</body>

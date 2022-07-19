@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Добавление задачи</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="rectangle8"></div>
+    <div id="vector7"></div>
+<form action="handler.php">
+<h38>Добавление задачи</h38>
+<h39>Название работы</h39>
+<h40><input type="text1" class="demo-1" placeholder="Название работы"></h40>
+
+<h41>Дата и время сдачи работы</h41>
+<h42><input type="text1" class="demo-1" placeholder="dd.mm.yyyy HH:MM"></h42>
+
+<h43>Для кого задача</h43>
+<h44><input type="text1" class="demo-1" placeholder="Фамилия"></h44>
+
+<h45><input type="text2" class="demo-1" placeholder="Текст"></h45>
+
+<p><button11>
+    <img src="{{ url_for('static', filename='img/скрепка.png') }}" alt="" style="vertical-align:middle">
+    Прикрепить файлы
+</button11></p>
+
+<p><button12>
+    Отмена
+    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt="" style="vertical-align:middle">
+</button12></p>
+
+<p><button13>
+    Отправить задание
+    <img src="{{ url_for('static', filename='img/Arrow.png') }}" alt="" style="vertical-align:middle">
+</button13></p>
+
+</form>
+</body>
+</html>
