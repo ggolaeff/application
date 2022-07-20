@@ -18,9 +18,9 @@ body {
 #rectangle1 {
     position: absolute;
     width: 731px;
-    height: 865px;
+    height: 900px;
     left: 594px;
-    top: 50px;
+    top: 10px;
 
     background: #864DE2;
     border-radius: 30px;
@@ -28,10 +28,10 @@ body {
 
 #rectangle2 {
     position: absolute;
-    width: 671px;
-    height: 37px;
+    width: 670px;
+    height: 40px;
     left: 624px;
-    top: 134px;
+    top: 100px;
 
     background: #7C79F2;
     border-radius: 20px;
@@ -39,10 +39,10 @@ body {
 
 #rectangle3 {
     position: absolute;
-    width: 671px;
-    height: 48px;
+    width: 670px;
+    height: 40px;
     left: 624px;
-    top: 182px;
+    top: 148px;
 
     background: #7C79F2;
     border-radius: 20px;
@@ -84,9 +84,9 @@ body {
 #rectangle7 {
     position: absolute;
     width: 1013px;
-    height: 945px;
+    height: 900px;
     left: 453px;
-    top: 40px;
+    top: 10px;
 
     background: #864DE2;
     border-radius: 46px;
@@ -95,9 +95,9 @@ body {
 #rectangle8 {
     position: absolute;
     width: 921px;
-    height: 945px;
+    height: 900px;
     left: 513px;
-    top: 35px;
+    top: 10px;
 
     background: #864DE2;
     border-radius: 46px;
@@ -127,7 +127,7 @@ body {
 #rectangle11 {
     position: absolute;
     width: 1105px;
-    height: 80px;
+    height: 212px;
     left: 259px;
     top: 343px;
 
@@ -145,6 +145,36 @@ body {
     background: #7C79F2;
     border-radius: 16px;
 }
+#rectangle13{
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 624px;
+    top: 196px;
+
+    background: #7C79F2;
+    border-radius: 20px;
+}
+#rectangle14{
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 500px;
+    top: 476px;
+
+    background: #7C79F2;
+    border-radius: 20px;
+}
+#rectangle15{
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 500px;
+    top: 680px;
+
+    background: #7C79F2;
+    border-radius: 20px;
+}
 
 #vector1 {
     position: absolute;
@@ -161,7 +191,7 @@ body {
     width: 731px;
     height: 0px;
     left: 594px;
-    top: 121px;
+    top: 80px;
 
     border: solid #2A297E;
 }
@@ -191,7 +221,7 @@ body {
     width: 1013px;
     height: 0px;
     left: 453px;
-    top: 147px;
+    top: 100px;
 
     border: solid #2A297E;
 }
@@ -201,7 +231,7 @@ body {
     width: 1013px;
     height: 0px;
     left: 453px;
-    top: 623px;
+    top: 530px;
 
     border: solid #2A297E;
 }
@@ -211,7 +241,7 @@ body {
     width: 1013px;
     height: 0px;
     left: 453px;
-    top: 140px;
+    top: 100px;
 
     border: solid #2A297E;
 }
@@ -322,8 +352,8 @@ h8 {
     position: absolute;
     width: 118px;
     height: 39px;
-    left: 901px;
-    top: 61px;
+    left: 890px;
+    top: 30px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -339,7 +369,7 @@ h9 {
     width: 671px;
     height: 33px;
     left: 624px;
-    top: 136px;
+    top: 100px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -356,7 +386,7 @@ h10 {
     width: 671px;
     height: 34px;
     left: 624px;
-    top: 189px;
+    top: 150px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -581,9 +611,9 @@ h23 {
 
 h24 {
     position: absolute;
-    width: 249px;
-    left: 537px;
-    top: 78px;
+    width: 600px;
+    left: 500px;
+    top: 40px;
 
     color: #FFFFFF;
     font-family: Cuprum;
@@ -612,10 +642,10 @@ h25 {
 
 h26 {
     position: absolute;
-    width: 204px;
+    width: 300px;
     height: 49px;
-    left: 1198px;
-    top: 78px;
+    left: 1160px;
+    top: 20px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -647,18 +677,22 @@ h28 {
     width: 912px;
     height: 240px;
     left: 504px;
-    top: 263px;
-
+    top: 220px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 50px;
     background: #7C79F2;
     border-radius: 30px;
 }
 
 h29 {
     position: absolute;
-    width: 270px;
+    width: 400px;
     height: 31px;
     left: 524px;
-    top: 552px;
+    top: 480px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -674,7 +708,7 @@ h30 {
     width: 150px;
     height: 31px;
     left: 536px;
-    top: 643px;
+    top: 684px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -751,13 +785,22 @@ h34 {
 
 h35 {
     position: absolute;
-    width: 582px;
-    height: 64px;
+    width: 560px;
+    height: 44px;
     left: 504px;
-    top: 785px;
+    top: 540px;
 
     background: #7C79F2;
     border-radius: 30px;
+    font-family: 'Cuprum';
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 40px;
+
+    white-space: nowrap;
+    color: #FFFFFF;
 }
 
 h36 {
@@ -797,7 +840,7 @@ h38 {
     width: 249px;
     height: 37px;
     left: 835px;
-    top: 65px;
+    top: 40px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -810,10 +853,10 @@ h38 {
 
 h39 {
     position: absolute;
-    width: 456.16px;
-    height: 23.27px;
-    left: 582.49px;
-    top: 160px;
+    width: 458px;
+    height: 24px;
+    left: 580px;
+    top: 130px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -826,10 +869,10 @@ h39 {
 
 h40 {
     position: absolute;
-    width: 588px;
-    height: 55.85px;
-    left: 545px;
-    top: 198.16px;
+    width: 654px;
+    height: 64px;
+    left: 550px;
+    top: 170px;
 
     background: #7C79F2;
     border-radius: 20px;
@@ -837,10 +880,10 @@ h40 {
 
 h41 {
     position: absolute;
-    width: 456.16px;
-    height: 23.27px;
-    left: 582.49px;
-    top: 291px;
+    width: 458px;
+    height: 24px;
+    left: 580px;
+    top: 250px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -853,10 +896,23 @@ h41 {
 
 h42 {
     position: absolute;
-    width: 588px;
-    height: 55.85px;
-    left: 545px;
-    top: 329.16px;
+    width: 600px;
+    height: 56px;
+    left: 550px;
+    top: 290px;
+
+    background: #7C79F2;
+    border-radius: 20px;
+}
+
+.datetime{
+    position: absolute;
+    width: 622px;
+    height: 46px;
+    left: 550px;
+    top: 290px;
+    border: 1px solid #7C79F2;
+    padding: 10px 10px 10px 20px;
 
     background: #7C79F2;
     border-radius: 20px;
@@ -867,7 +923,7 @@ h43 {
     width: 454.98px;
     height: 23.27px;
     left: 582.39px;
-    top: 414px;
+    top: 370px;
 
     font-family: 'Cuprum';
     font-style: normal;
@@ -878,23 +934,14 @@ h43 {
     color: #FFFFFF;
 }
 
-h44 {
-    position: absolute;
-    width: 396.56px;
-    height: 56px;
-    left: 545px;
-    top: 452px;
 
-    background: #7C79F2;
-    border-radius: 20px;
-}
 
 h45 {
     position: absolute;
     width: 833px;
     height: 189px;
     left: 545px;
-    top: 555px;
+    top: 520px;
 
     background: #7C79F2;
     border-radius: 30px;
@@ -902,20 +949,34 @@ h45 {
 
 h46 {
     position: absolute;
-    width: 214px;
-    height: 33px;
-    left: 641px;
-    top: 792px;
+    left: 545px;
+    top: 720px;
+
+    background: #7C79F2;
+    border-radius: 30px;
 
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 400;
     font-size: 27px;
-    line-height: 31px;
-    white-space: nowrap;
+    line-height: 65px;
+    text-align: center;
     color: #FFFFFF;
 }
-
+input[type="text3"]{  #osmotr_zadachi
+    display: inline-block;
+    overflow-wrap: break-word;
+    border:1px solid green;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #7C79F2;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #7C79F2;
+}
 h47 {
     position: absolute;
     width: 79px;
@@ -1351,9 +1412,9 @@ h74 {  /* Картинка для страницы профиль */
 
 h75 {  /* Картинка для страницы осмотр задач (мусорка) */
     position: absolute;
-    width: 73px;
-    height: 73px;
-    left: 692px;
+    width: 60px;
+    height: 60px;
+    left: 710px;
     top: 159px;
 
 }
@@ -1362,7 +1423,7 @@ h76 {  /* Картинка для страницы осмотр задач (ст
     position: absolute;
     width: 30px;
     height: 35px;
-    left: 790px;
+    left: 950px;
     top: 910px;
 }
 
@@ -1372,14 +1433,6 @@ h77 {  /* Картинка для страницы осмотр задач (кр
     height: 30px;
     left: 1360px;
     top: 915px;
-}
-
-h78 {  /* Картинка для страницы добавление задач (скрепка) */
-    position: absolute;
-    width: 42.58px;
-    height: 42.14px;
-    left: 581px;
-    top: 778px;
 }
 
 h79 {  /* Картинка для страницы добавление задач (крестик) */
@@ -1398,23 +1451,7 @@ h80 {  /* Картинка для страницы добавление зада
     top: 894px;
 }
 
-h81 {  /* Картинка для страницы экран пользователя (круг) */
-    position: absolute;
-    width: 53px;
-    height: 53px;
-    left: 498px;
-    top: 28px;
-}
-
-h82 {  /* Картинка для страницы экран пользователя (крест) */
-    position: absolute;
-    width: 29px;
-    height: 29px;
-    left: 510px;
-    top: 40px;
-}
-
-button {
+.button0 {
     position: absolute;
     width: 162.06px;
     height: 69px;
@@ -1434,13 +1471,13 @@ button {
     color: #FFFFFF;
 }
 
-button:hover {
+.button0:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button1 {
+.button1 {
     position: absolute;
     width: 170px;
     height: 63px;
@@ -1466,7 +1503,7 @@ button1:hover {
 
 }
 
-button2 {
+.button2 {
     position: absolute;
     width: 204px;
     height: 72px;
@@ -1492,26 +1529,51 @@ button2:hover {
     border: 2px solid #7C79F2;
 }
 
-button3 {
+.button3 {
     position: absolute;
-    width: 266px;
+    width: 320px;
     height: 72px;
-    left: 504px;
-    top: 163px;
+    left: 500px;
+    top: 130px;
 
     background: #7C79F2;
     border-radius: 30px;
 
     font-family: 'Cuprum';
     font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 65px;
+    font-weight: 350;
+    font-size: 30px;
+    line-height: 10px;
     text-align: center;
     color: #FFFFFF;
 }
 
-button3:hover {
+.button3:hover {
+    color: #FFFFFF;
+    background: #864DE2;
+    border: 2px solid #7C79F2;
+}
+
+.button-delete-all {
+    position: absolute;
+    width: 320px;
+    height: 72px;
+    left: 840px;
+    top: 130px;
+
+    background: #7C79F2;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 350;
+    font-size: 30px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button-delete-all:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
@@ -1542,16 +1604,16 @@ button4:hover {
     border: 2px solid #7C79F2;
 }
 
-button5 {
+.button5 {
     position: absolute;
-    width: 114px;
+    width: 200px;
     height: 50px;
-    left: 595px;
-    top: 694px;
+    left: 500px;
+    top: 600px;
 
     background: #7C79F2;
     border-radius: 30px;
-
+    cursor: pointer;
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 400;
@@ -1561,22 +1623,22 @@ button5 {
     color: #FFFFFF;
 }
 
-button5:hover {
+.button5:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button6 {
+.button6 {
     position: absolute;
-    width: 150px;
+    width: 200px;
     height: 50px;
-    left: 781px;
-    top: 694px;
+    left: 740px;
+    top: 600px;
 
     background: #7C79F2;
     border-radius: 30px;
-
+    cursor: pointer;
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 400;
@@ -1586,22 +1648,22 @@ button6 {
     color: #FFFFFF;
 }
 
-button6:hover {
+.button6:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button7 {
+.button7 {
     position: absolute;
-    width: 114px;
+    width: 200px;
     height: 50px;
-    left: 1012px;
-    top: 694px;
+    left: 980px;
+    top: 600px;
 
     background: #7C79F2;
     border-radius: 30px;
-
+    cursor: pointer;
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 400;
@@ -1611,22 +1673,22 @@ button7 {
     color: #FFFFFF;
 }
 
-button7:hover {
+.button7:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button8 {
+.button8 {
     position: absolute;
-    width: 130px;
+    width: 200px;
     height: 50px;
-    left: 1207px;
-    top: 694px;
+    left: 1220px;
+    top: 600px;
 
     background: #7C79F2;
     border-radius: 30px;
-
+    cursor: pointer;
     font-family: 'Cuprum';
     font-style: normal;
     font-weight: 400;
@@ -1636,19 +1698,20 @@ button8 {
     color: #FFFFFF;
 }
 
-button8:hover {
+.button8:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button9 {
+
+.button9 {
     position: absolute;
-    width: 340px;
+    width: 500px;
     height: 72px;
     left: 504px;
-    top: 892px;
-
+    top: 780px;
+    cursor: pointer;
     background: #7C79F2;
     border-radius: 30px;
 
@@ -1661,18 +1724,18 @@ button9 {
     color: #FFFFFF;
 }
 
-button9:hover {
+.button9:hover {
   color: #FFFFFF;
   background: #864DE2;
   border: 2px solid #7C79F2;
 }
 
-button10 {
+.button10 {
     position: absolute;
     width: 204px;
     height: 72px;
     left: 1212px;
-    top: 892px;
+    top: 780px;
 
     background: #7C79F2;
     border-radius: 30px;
@@ -1686,29 +1749,21 @@ button10 {
     color: #FFFFFF;
 }
 
-button10:hover {
+.button10:hover {
   color: #FFFFFF;
   background: #864DE2;
   border: 2px solid #7C79F2;
 }
 
-button11 {
+.button11 {
     position: absolute;
-    width: 310px;
-    height: 66px;
-    left: 569px;
-    top: 773px;
+    width: 320px;
+    height: 60px;
+    left: 545px;
+    top: 720px;
 
     background: #7C79F2;
     border-radius: 30px;
-
-    font-family: 'Cuprum';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 27px;
-    line-height: 60px;
-    text-align: center;
-    color: #FFFFFF;
 }
 
 button11:hover {
@@ -1717,12 +1772,12 @@ button11:hover {
     border: 2px solid #7C79F2;
 }
 
-button12 {
+.button12 {
     position: absolute;
     width: 234px;
     height: 72px;
     left: 545px;
-    top: 868px;
+    top: 800px;
 
     background: #7C79F2;
     border-radius: 30px;
@@ -1742,12 +1797,12 @@ button12:hover {
     border: 2px solid #7C79F2;
 }
 
-button13 {
+.button13 {
     position: absolute;
-    width: 378px;
+    width: 340px;
     height: 72px;
-    left: 1037px;
-    top: 868px;
+    left: 1040px;
+    top: 800px;
 
     background: #7C79F2;
     border-radius: 30px;
@@ -1761,13 +1816,13 @@ button13 {
     color: #FFFFFF;
 }
 
-button13:hover {
+.button13:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button14 {
+.button14 {
     position: absolute;
     width: 282px;
     height: 56px;
@@ -1786,13 +1841,13 @@ button14 {
     color: #FFFFFF;
 }
 
-button14:hover {
+.button14:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button15 {
+.button15 {
     position: absolute;
     width: 119px;
     height: 56px;
@@ -1810,13 +1865,13 @@ button15 {
     color: #FFFFFF;
 }
 
-button15:hover {
+.button15:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button16 {
+.button16 {
     position: absolute;
     width: 1096.6px;
     height: 64px;
@@ -1827,24 +1882,24 @@ button16 {
     border-radius: 16px;
 }
 
-button16:hover {
+.button16:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
 
-button17 {
+.button17 {
     position: absolute;
     width: 1096.6px;
     height: 64px;
     left: 263.58px;
-    top: 189px;
+    top: 350px;
 
     background: #864DE2;
     border-radius: 16px;
 }
 
-button17:hover {
+.button17:hover {
     color: #FFFFFF;
     background: #864DE2;
     border: 2px solid #7C79F2;
@@ -1919,7 +1974,44 @@ button20:hover {
     background: #864DE2;
     border: 2px solid #7C79F2;
 }
+.button21{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 498px;
+    top: 28px;
 
+    background: #7C79F2;
+    border-radius: 25px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 55px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button21:hover {
+    color: #FFFFFF;
+    background: #864DE2;
+    border: 2px solid #7C79F2;
+}
+h81 {  /* Картинка для страницы экран пользователя (круг) */
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: -2px;
+    top: -1px;
+}
+
+h82 {  /* Картинка для страницы экран пользователя (крест) */
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 10px;
+    top: 4px;
+}
 
 .colortext {
     position: absolute;
@@ -1941,8 +2033,7 @@ button20:hover {
     position: relative;
     margin-top: 50px;
 }
-
-input[type="text"]{  #окона ввода
+.text{  #окона ввода
     display: inline-block;
     width: 387px;
     height: 59.57px;
@@ -1955,10 +2046,12 @@ input[type="text"]{  #окона ввода
     background: #7C79F2;
 }
 
-input[type="text1"]{  #osmotr_zadachi
+.text1 {  #osmotr_zadachi
     display: inline-block;
-    width: 660px;
+    width: 654px;
     height: 64px;
+    left: 550px;
+    top: 170px;
     box-sizing: border-box;
     outline: none;
     border: 1px solid #7C79F2;
@@ -1967,7 +2060,7 @@ input[type="text1"]{  #osmotr_zadachi
     background: #7C79F2;
 }
 
-input[type="text2"]{  #osmotr_zadachi
+.text2 {  #osmotr_zadachi
     display: inline-block;
     overflow-wrap: break-word;
     border:1px solid green;
@@ -1981,6 +2074,7 @@ input[type="text2"]{  #osmotr_zadachi
     transition: all 0.1s ease-out;
     background: #7C79F2;
 }
+
 
 label {
     position: absolute;
@@ -2045,7 +2139,65 @@ label7 {
     left: 656px;
     top: 439px;
 }
+.select{
+    position: absolute;
+    width: 660px;
+    height: 64px;
+    left: 545px;
+    top: 420px;
+    border: 1px solid #7C79F2;
+    padding: 10px 10px 10px 30px;
 
+    background: #7C79F2;
+    border-radius: 20px;
+}
+h44 {#
+    position: absolute;
+    width: 396.56px;
+    height: 56px;
+    left: 545px;
+    top: 452px;
 
+    background: #7C79F2;
+    border-radius: 20px;
+}
+h78 { # /* Картинка для страницы добавление задач (скрепка) */
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    left: 100px;
+    top: 200px;
+}
+h83{
+    position: absolute;
+    width: 671px;
+    height: 33px;
+    left: 624px;
+    top: 196px;
 
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    text-align: center;
 
+    color: #FFFFFF;
+}
+h84{
+    position: absolute;
+    width: 671px;
+    height: 34px;
+    left: 624px;
+    top: 150px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    text-align: center;
+
+    color: #FFFFFF;
+}

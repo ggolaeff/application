@@ -11,36 +11,67 @@
 </head>
 <body>
     <div id="rectangle7"></div>
+    <div id="rectangle14"></div>
+    <div id="rectangle15"></div>
     <div id="vector5"></div>
     <div id="vector6"></div>
-<form action="handler.php">
-<h24>Название работы</h24>
-<h25>Группа</h25>
-<h26>Фамилия И.О.</h26>
 
-<p><button3>
-    Удалить задачу
-    <img src="{{ url_for('static', filename='img/корзина.png') }}" alt="" style="vertical-align:middle">
-</button3></p>
-<h28><input type="text" class="demo-1" placeholder="Подпись к задаче"></h28>
-<button4>Прикрепленные файлы</button4>
-<h30>Статус задачи:</h30>
-<button5>Прочтено</button5>
-<button6>На проверке</button6>
-<button7>Зачтено</button7>
-<button8>Не зачтено</button8>
-<h35><input type="text" class="demo-1" placeholder="Контакт для связи: _____________"></h35>
+<h24>Название Проекта: {{ name_task }}</h24>
 
-<p><button9>
-    Продвинуть задачу
+<h26>Работа выполнена: {{ from_user_name }}</h26>
+
+<form method="post">
+{% if role == 0 %}
+<button class="button-delete-all" name="del" type="submit" value="all">
+    Удалить у всех
+    <img src="{{ url_for('static', filename='img/корзина.png') }}" alt ="" style="vertical-align:middle">
+</button>
+{% endif %}
+<button class="button3" type="submit" name="del"  value="one">
+удалить задачу
+<img src="{{ url_for('static', filename='img/корзина.png') }}" alt ="" style="vertical-align:middle" >
+</button>
+</form>
+
+<h28> {{ text_task }} </h28>
+
+        <h29>Приклепленная ссылка: </h29>
+    <h30>Статус задачи: {{ status}} </h30>
+
+{% if role == 1 %}
+    <form method="post">
+        <button class="button5" type="submit" name="status" value="read">Прочтена
+
+        </button>
+
+        <button class="button6" type="submit" name="status" value="looking">На проверке
+
+        </button>
+
+        <button class="button7" type="submit" name="status" value="good">Зачтена
+
+        </button>
+
+        <button class="button8" type="submit" name="status" value="bad">Не зачтена
+
+        </button>
+    </form>
+{% endif %}
+<h35>Контакт для связи: {{ from_user_contact }}</h35>
+{% if role == 0 %}
+
+    <form method="post">
+<button class="button9" type="submit" name="elev" value="1">Продвинуть задачу ({{ time_lost }})
     <img src="{{ url_for('static', filename='img/Arrow2.png') }}" alt ="" style="vertical-align:middle">
-</button9></p>
-
-<p><button10>
+</button>
+    </form>
+        {% endif %}
+    <form action="/tasks" method="GET">
+<button class="button10" type="submit">
     Закрыть
     <img src="{{ url_for('static', filename='img/Vector.png') }}" alt ="" style="vertical-align:middle">
-</button10></p>
+</button>
+    </form>
 
-</form>
-</html>
 </body>
+</html>

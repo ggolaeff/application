@@ -11,9 +11,9 @@ class Tasks(db.Model):
     begin_date = db.Column(db.DateTime, primary_key=False)
     end_date = db.Column(db.DateTime, primary_key=False)
     status = db.Column(db.String(100), primary_key=False)
+    id_ping = db.Column(db.Integer, primary_key=False)
+    elevations = db.Column(db.Integer, primary_key=False)
 
     def __repr__(self):
         return '<Task %r>' % self.id
-
-
 

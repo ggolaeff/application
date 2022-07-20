@@ -42,3 +42,8 @@ def check_auth(login, password):
 def create_new_password(user, password):
     user.password = generate_password_hash(password)
     db.session.commit()
+
+
+from task_edit import db
+
+db.create_all()

@@ -6,40 +6,46 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>Добавление задачи</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
     <div id="rectangle8"></div>
     <div id="vector7"></div>
-<form action="handler.php">
-<h38>Добавление задачи</h38>
-<h39>Название работы</h39>
-<h40><input type="text1" class="demo-1" placeholder="Название работы"></h40>
-
-<h41>Дата и время сдачи работы</h41>
-<h42><input type="text1" class="demo-1" placeholder="dd.mm.yyyy HH:MM"></h42>
-
-<h43>Для кого задача</h43>
-<h44><input type="text1" class="demo-1" placeholder="Фамилия"></h44>
-
-<h45><input type="text2" class="demo-1" placeholder="Текст"></h45>
-
-<p><button11>
-    <img src="{{ url_for('static', filename='img/скрепка.png') }}" alt="" style="vertical-align:middle">
-    Прикрепить файлы
-</button11></p>
-
-<p><button12>
-    Отмена
-    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt="" style="vertical-align:middle">
-</button12></p>
-
-<p><button13>
+    <h38>Добавление задачи</h38>
+    <h39>Название работы:</h39>
+    <h41>Дата и время сдачи работы:</h41>
+    <h43>Для кого задача:</h43>
+<form method="POST">
+    <table>
+        <h40><input type="text" class="text1" name="name" placeholder="Название работы"></h40>
+<input type="datetime-local" class="datetime" name="end_date">
+<select class="select" name="to_user" method="GET">
+                {% for name in names %}
+                <option value="" SELECTED>{{name}}</option>
+                {% endfor %}
+</select>
+    <h45><input type="text" class="text2" name="text_task" placeholder="Комментарий к задачи"></h45>
+    <h46><input type="text" class="text" name="files" placeholder="ссылка на ваше задание"></h46>
+    <button class="button13" type="submit" value="Отправить задание">
     Отправить задание
     <img src="{{ url_for('static', filename='img/Arrow.png') }}" alt="" style="vertical-align:middle">
-</button13></p>
-
+    </button>
+    </table>
+</form>
+<form action="/tasks" method="get">>
+    <button class="button12" type="submit">
+    Отмена
+    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt="" style="vertical-align:middle">
+    </button>
 </form>
 </body>
 </html>

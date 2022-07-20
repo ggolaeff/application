@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    background: #2A297E;
+}
+
+#rectangle9 {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #864DE2;
+}
+
+#rectangle12 {
+    position: absolute;
+    width: 293px;
+    height: 320px;
+    left: 1383px;
+    top: 115px;
+
+    background: #7C79F2;
+    border-radius: 16px;
+}
+
+#vector8 {
+    position: absolute;
+    width: 293px;
+    height: 0px;
+    left: 1383px;
+    top: 159px;
+
+    border: solid #2A297E;
+}
+
+h65 {
+    position: absolute;
+    width: 84px;
+    height: 33px;
+    left: 1481px;
+    top: 119px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+h66 {
+    position: absolute;
+    width: 68px;
+    height: 33px;
+    left: 1442px;
+    top: 168px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+h67 {
+    position: absolute;
+    width: 106px;
+    height: 33px;
+    left: 1442px;
+    top: 210px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+h68 {
+    position: absolute;
+    width: 141px;
+    height: 33px;
+    left: 1442px;
+    top: 248px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+h69 {
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 1442px;
+    top: 286px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+h70 {
+    position: absolute;
+    width: 123px;
+    height: 33px;
+    left: 1442px;
+    top: 324px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+
+label {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1406px;
+    top: 176px;
+}
+
+label1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1406px;
+    top: 218px;
+}
+
+label2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1406px;
+    top: 256px;
+}
+
+label3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1406px;
+    top: 294px;
+}
+
+label4 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 1406px;
+    top: 332px;
+}
+
+h3 {
+    color: white;
+    font-family: 'Cuprum';
+
+}
+
+h2 {
+    color: white;
+    font-family: 'Cuprum';
+
+}
+
+h49 {
+    position: absolute;
+    width: 118px;
+    height: 47px;
+    left: 294px;
+    top: 31px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #FFFFFF;
+}
+
+.button14 {
+    position: absolute;
+    width: 282px;
+    height: 56px;
+    left: 1248px;
+    top: 21px;
+    cursor: pointer;
+    background: #7C79F2;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button14:hover {
+    color: #FFFFFF;
+    background: #32317C;
+    border: 2px solid #7C79F2;
+}
+
+.button15 {
+    position: absolute;
+    width: 119px;
+    height: 56px;
+    left: 1570px;
+    top: 22px;
+    cursor: pointer;
+    background: #7C79F2;
+    border-radius: 18px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button15:hover {
+    color: #FFFFFF;
+    background: #32317C;
+    border: 2px solid #7C79F2;
+}
+
+h81 {  /* Картинка для страницы экран пользователя (круг) */
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: -2px;
+    top: -1px;
+}
+
+h82 {  /* Картинка для страницы экран пользователя (крест) */
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    left: 10px;
+    top: 4px;
+}
+
+.button21{
+    position: absolute;
+    width: 53px;
+    height: 53px;
+    left: 498px;
+    top: 28px;
+    cursor: pointer;
+    background: #7C79F2;
+    border-radius: 25px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 55px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button21:hover {
+    color: #FFFFFF;
+    background: #864DE2;
+    border: 2px solid #7C79F2;
+}
+
+.wrap {
+    margin-left: 259px;
+    margin-top: 125px;
+}
+
+.btn-task {
+    width: 1096.6px;
+    height: 64px;
+    background: #864DE2;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.btn-task:hover {
+    color: #FFFFFF;
+    background: #864DE2;
+    border: 2px solid #7C79F2;
+}
+
+.button19 {
+    position: absolute;
+    width: 116px;
+    height: 51px;
+    left: 1398px;
+    top: 370px;
+    cursor: pointer;
+    background: #864DE2;
+    border: 2px solid #2A297E;
+    border-radius: 19px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.button19:hover {
+color: #FFFFFF;
+background: #864DE2;
+border: 2px solid #7C79F2;
+}
+.button20 {
+    position: absolute;
+    width: 116px;
+    height: 51px;
+    left: 1547px;
+    top: 370px;
+    cursor: pointer;
+    background: #864DE2;
+    border: 2px solid #2A297E;
+    border-radius: 19px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 47px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.button20:hover {
+color: #FFFFFF;
+background: #864DE2;
+border: 2px solid #7C79F2;
+}

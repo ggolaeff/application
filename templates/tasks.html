@@ -1,66 +1,105 @@
 <!doctype html>
-<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <title>Экран пользователя</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tasks.css') }}">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
 <body>
     <div id="rectangle9"></div>
-    <div id="rectangle10"></div>
-    <div id="rectangle11"></div>
+
     <div id="rectangle12"></div>
     <div id="circle"></div>
     <div id="vector8"></div>
-    <label><input type="radio" name="dva"/></label>
-    <label1><input type="radio" name="dva"/></label1>
-    <label2><input type="radio" name="dva"/></label2>
-    <label3><input type="radio" name="dva"/></label3>
-    <label4><input type="radio" name="dva"/></label4>
+    <form method="post">
+    <label><input type="radio" name="filter" value="nonecheck"/></label>
+    <label1><input type="radio" name="filter" value="read"/></label1>
+    <label2><input type="radio" name="filter" value="looking"/></label2>
+    <label3><input type="radio" name="filter" value="good"/></label3>
+    <label4><input type="radio" name="filter" value="bad"/></label4>
 
-<form action="handler.php">
+        <button class="button19" name="filter" type="reset">Сбросить</button>
+        <button class="button20" name="filtered" type="submit">Найти</button>
+    </form>
+    <h65>Фильтр</h65>
+    <h66>Новое</h66>
+    <h67>Прочтена</h67>
+    <h68>На проверке</h68>
+    <h69>Зачтена</h69>
+    <h70>Не зачтена</h70>
+
+
 <h49>Задачи</h49>
 
-<button14>Фамилия И.О.</button14>
+   <form action="/add_tasks" method="GET">
+    <form action="handler.php">
+        {% if role == 0 %}
+        <button class="button21">
+        <h81><img src="{{ url_for('static', filename='img/круг.png') }}" alt =""></h81>
+        <h82><img src="{{ url_for('static', filename='img/плюс.png') }}" alt =""></h82>
+        </button>
+        {% endif %}
+        </form>
+    </form>
 
-<button15>Выйти</button15>
+<h49>Задачи</h49>
+    <form action="/profile" method="GET">
+<button class="button14" name="{{ name_user }}" type="submit">{{ name_user }}</button>
+    </form>
+<form action="/logout" method="GET">
+    <button class="button15" type="submit"> Выйти </button>
+</form>
+<form action="/view_task" method="get">
 
-<button16 class="w-100 btn btn-lg btn-primary" type="submit"></button16>
-        <h52>Название</h52>
-        <h53>000:00:00</h53>
-        <h54>Статус</h54>
-        <h55>Фамилия И.О.</h55>
+    <div class="wrap">
+    {% if role == 1 %}
 
-<button17 class="w-100 btn btn-lg btn-primary" type="submit"></button17>
-        <h56>Название</h56>
-        <h57>000:00:00</h57>
-        <h58>Статус</h58>
-        <h59>Фамилия И.О.</h59>
+    <h2>Задачи с дедлайном</h2>
+    {% for task in tasks %}
+        {% if task.end_date != None %}
+        <button class="btn-task" name="{{ task.id }}" type="submit">
 
-<button18 class="w-100 btn btn-lg btn-primary" type="submit"></button18>
-        <h60>Название</h60>
-        <h61>000:00:00</h61>
-        <h62>Статус</h62>
-        <h63>Фамилия И.О.</h63>
-<h64>Нет задач без дедлайна</h64>
+        <h3>{{ task.name_task }} &nbsp; {{ deadline_list[task.id] }} &nbsp; {{ task_list[task.id] }} &nbsp; {{ task.status }}</h3>
+        </button>
+        {% endif %}
+    {% endfor %}
+    <h2>Задачи без дедлайна</h2>
+    {% for task in tasks %}
+        {% if task.end_date == None %}
+        <button class="btn-task" name="{{ task.id }}" type="submit">
+        <h3>{{ task.name_task }} &nbsp; {{ task_list[task.id] }} &nbsp; {{ task.status }}</h3>
 
-<h65>Фильтр</h65>
-<h66>Новое</h66>
-<h67>Прочтена</h67>
-<h68>На проверке</h68>
-<h69>Зачтена</h69>
-<h70>Не зачтена</h70>
+        </button>
+        {% endif %}
+    {% endfor %}
 
-<button19>Сбросить</button19>
-<button20>Найти</button20>
+    {% else %}
 
+    <h2>Задачи с дедлайном</h2>
+    {% for task in tasks %}
+        {% if task.end_date != None %}
 
-<h81><img src="{{ url_for('static', filename='img/круг.png') }}" alt =""></h81>
-<h82><img src="{{ url_for('static', filename='img/плюс.png') }}" alt =""></h82>
+        <button class="btn-task" name="{{ task.id }}" type="submit">
+            <h3>{{ task.name_task }} &nbsp; {{ deadline_list[task.id] }} &nbsp; {{ task.status }}</h3>
+        </button>
+        {% endif %}
+    {% endfor %}
+    <h2>Задачи без дедлайна</h2>
+    {% for task in tasks %}
+        {% if task.end_date == None %}
+            <button class="btn-task" name="{{ task.id }}" type="submit">
+        <h3>{{ task.name_task }} &nbsp; {{ task.status }}</h3>
+            </button>
+        {% endif %}
+    {% endfor %}
+
+    {% endif %}
+    </div>
+</form>
+
 </form>
 </body>
 </html>
