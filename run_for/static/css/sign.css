@@ -1,0 +1,175 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Verdana', sans-serif;
+}
+html, body{
+  height: 100%;
+}
+body{
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  justify-content: center;
+  align-items: center;
+}
+#rectangle {
+    position: absolute;
+    width: 446px;
+    height: 500px;
+    left: 748px;
+    top: 200px;
+
+    background: #C0C0C0;
+    border-radius: 46px;
+    border: solid #000
+}
+
+
+h1 {
+    position: absolute;
+    left: 930px;
+    top: 230px;
+
+    font-family: Cuprum;
+    font-size: 36px;
+    font-style: bold;
+    font-variant: normal;
+    font-weight: 420;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+
+    color: #000;
+}
+h2 {
+    position: absolute;
+    left: 790px;
+    top: 290px;
+
+    font-family: Cuprum;
+    font-size: 30px;
+    font-style: bold;
+    font-variant: normal;
+    font-weight: 420;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+
+    color: #000;
+
+}
+
+h3 {
+    position: absolute;
+    width: 180px;
+    height: 24px;
+    left: 790px;
+    top: 340px;
+
+    font-family: Cuprum;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+
+    color: #000;
+}
+h4 {
+    position: absolute;
+    width: 387px;
+    height: 60px;
+    left: 790px;
+    top: 440px;
+
+    font-family: Cuprum;
+    font-size: 30px;
+    font-style: bold;
+    font-variant: normal;
+    font-weight: 420;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+
+    color: #000;
+
+    border-radius: 30px;
+}
+h5 {
+    position: absolute;
+    width: 180px;
+    height: 24px;
+    left: 790px;
+    top: 490px;
+
+    font-family: Cuprum;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-style: normal;
+
+    color: #000;
+}
+
+
+.text-input{
+    position: relative;
+    margin-top: 50px;
+}
+.text1{  #окона ввода
+    display: inline-block;
+    width: 380px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #FFDAB9;
+}
+
+.text2{  #окона ввода
+    display: inline-block;
+    width: 380px;
+    height: 60px;
+    box-sizing: border-box;
+    outline: none;
+    border: 2px solid #000;
+    border-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #FFDAB9;
+}
+
+.button0 {
+    position: absolute;
+    width: 180px;
+    height: 70px;
+    left: 880px;
+    top: 600px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+    border: 2px solid #000;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 420;
+    font-size: 27px;
+    line-height: 31px;
+
+    color: #000;
+}
+.button0:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}

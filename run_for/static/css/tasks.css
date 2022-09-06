@@ -1,0 +1,451 @@
+body{
+    margin: 0;
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+#rectangle1 {
+    position: absolute;
+    width: 1920px;
+    height: 100px;
+    left: 0px;
+    top: 0px;
+
+    background: #C0C0C0;
+}
+
+#rectangle2 {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    left: 1500px;
+    top: 140px;
+
+    background: #C0C0C0;
+    border-radius: 30px;
+    border: solid #000
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#vector1{
+    position: absolute;
+    width: 1914px;
+    height: 0px;
+    left: 0px;
+    top: 98px;
+
+    border: solid #000;
+}
+
+#vector2 {
+    position: absolute;
+    width: 300px;
+    height: 0px;
+    left: 1500px;
+    top: 200px;
+
+    border: solid #000;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    position: absolute;
+    width: 118px;
+    height: 47px;
+    left: 294px;
+    top: 4px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+
+    color: #000;
+}
+
+h2 {
+    color: #black;
+    font-family: 'Cuprum';
+
+}
+
+h3 {
+    color: #black;
+    font-family: 'Cuprum';
+
+}
+
+h4 {  /* Картинка для страницы экран пользователя (крест) */
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 8px;
+    top: -8px;
+}
+h5 {
+    position: absolute;
+    width: 84px;
+    height: 33px;
+    left: 1588px;
+    top: 82px;
+
+    font-family: 'Cuprum';
+    font-style: bold;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 46px;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+.button2 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 520px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+
+}
+
+.button2:hover {
+color: #000;
+background: #FFDAB9;
+border: 2px solid #FFDAB9;
+}
+
+.button3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 500px;
+    top: 30px;
+    background: #FFDAB9;
+    border-radius: 25px;
+}
+
+.button3:hover {
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+.button4 {
+    position: absolute;
+    width: 222px;
+    height: 56px;
+    left: 1360px;
+    top: 22px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.button4:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+.button5 {
+    position: absolute;
+    width: 162px;
+    height: 56px;
+    left: 1620px;
+    top: 22px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.button5:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+.wrap {
+    margin-left: 259px;
+    margin-top: 125px;
+}
+
+.btn-task {
+    width: 1096.6px;
+    height: 64px;
+    background: #FFDAB9;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 10px;
+    text-align: center;
+}
+
+.btn-task:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h66 {
+    position: absolute;
+    width: 68px;
+    height: 33px;
+    left: 1600px;
+    top: 300px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h67 {
+    position: absolute;
+    width: 106px;
+    height: 33px;
+    left: 1600px;
+    top: 300px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h68 {
+    position: absolute;
+    width: 141px;
+    height: 33px;
+    left: 1600px;
+    top: 300px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #000;
+}
+
+h69 {
+    position: absolute;
+    width: 89px;
+    height: 33px;
+    left: 1600px;
+    top: 300px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h70 {
+    position: absolute;
+    width: 123px;
+    height: 33px;
+    left: 1600px;
+    top: 300px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.button6 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 220px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.button7 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 280px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.button8 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 340px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;;
+}
+
+.button9 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 4000px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.button10 {
+    position: absolute;
+    width: 200px;
+    height: 40px;
+    left: 1550px;
+    top: 460px;
+    cursor: pointer;
+    background: #FFDAB9;
+    border-radius: 30px;
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 10px;
+    text-align: center;
+    color: #000;
+}

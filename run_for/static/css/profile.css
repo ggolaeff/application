@@ -1,0 +1,457 @@
+body{
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+#rectangle1 {
+    position: absolute;
+    width: 731px;
+    height: 900px;
+    left: 594px;
+    top: 10px;
+
+    background: #C0C0C0;
+    border-radius: 46px;
+    border: solid #000
+}
+
+#rectangle2 {
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 624px;
+    top: 100px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+
+#rectangle3 {
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 624px;
+    top: 148px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+
+#rectangle4{
+    position: absolute;
+    width: 670px;
+    height: 40px;
+    left: 624px;
+    top: 196px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+#vector1 {
+    position: absolute;
+    width: 731px;
+    height: 0px;
+    left: 594px;
+    top: 80px;
+
+    border: solid #000;
+}
+
+#vector2 {
+    position: absolute;
+    width: 731px;
+    height: 0px;
+    left: 594px;
+    top: 241px;
+
+    border: solid #000;
+}
+
+#vector3 {
+    position: absolute;
+    width: 731px;
+    height: 0px;
+    left: 594px;
+    top: 493px;
+
+    border: solid #000;
+}
+
+
+
+
+
+
+
+
+
+label1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 658px;
+    top: 310px;
+}
+
+label2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 658px;
+    top: 373px;
+}
+
+label3 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 656px;
+    top: 439px;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    position: absolute;
+    width: 118px;
+    height: 39px;
+    left: 890px;
+    top: 10px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+
+    color: #000;
+}
+
+h2 {
+    position: absolute;
+    width: 671px;
+    height: 33px;
+    left: 624px;
+    top: 80px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    text-align: center;
+
+    color: #000;
+}
+
+h3 {
+    position: absolute;
+    width: 671px;
+    height: 34px;
+    left: 624px;
+    top: 120px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    text-align: center;
+
+    color: #000;
+}
+
+h4 {
+    position: absolute;
+    width: 308px;
+    height: 33px;
+    left: 638px;
+    top: 212px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #000;
+}
+
+h5 {
+    position: absolute;
+    width: 66px;
+    height: 33px;
+    left: 694px;
+    top: 254px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+
+}
+
+h6 {
+    position: absolute;
+    width: 210px;
+    height: 33px;
+    left: 886px;
+    top: 224px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h7 {
+    position: absolute;
+    width: 95px;
+    height: 33px;
+    left: 694px;
+    top: 367px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h8 {
+    position: absolute;
+    width: 168px;
+    height: 33px;
+    left: 886px;
+    top: 355px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h9 {
+    position: absolute;
+    width: 84px;
+    height: 33px;
+    left: 692px;
+    top: 431px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h10 {
+    position: absolute;
+    width: 96px;
+    height: 33px;
+    left: 887px;
+    top: 418px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h11 {
+    position: absolute;
+    width: 217px;
+    height: 33px;
+    left: 851px;
+    top: 517px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+    white-space: nowrap;
+    color: #000;
+
+}
+
+h12 {
+    position: absolute;
+    width: 169px;
+    height: 33px;
+    left: 770px;
+    top: 568px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h13 {
+    position: absolute;
+    width: 162px;
+    height: 33px;
+    left: 770px;
+    top: 640px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+h14 {
+    position: absolute;
+    width: 204px;
+    height: 33px;
+    left: 770px;
+    top: 713px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+h15 {
+    position: absolute;
+    width: 400px;
+    height: 33px;
+    left: 770px;
+    top: 200px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 33px;
+
+    color: #000;
+}
+
+
+
+
+
+
+
+
+.button1 {
+    position: absolute;
+    width: 170px;
+    height: 63px;
+    left: 624px;
+    top: 800px;
+    background: #FFDAB9;
+    border-radius: 20px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 60px;
+    text-align: center;
+
+    color: #000;
+}
+
+.button1:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+
+}
+.button2 {
+    position: absolute;
+    width: 204px;
+    height: 72px;
+    left: 1091px;
+    top: 800px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 65px;
+    text-align: center;
+
+    color: #000;
+}
+
+.button2:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+
+
+
+
+
+
+
+
+.text-input{
+    position: relative;
+    margin-top: 50px;
+}
+.text{  #окона ввода
+    display: inline-block;
+    width: 387px;
+    height: 59.57px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #FFDAB9;
+    border-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #FFDAB9;
+}

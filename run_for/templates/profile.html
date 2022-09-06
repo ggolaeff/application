@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <title>Профиль</title>
+</head>
+<body>
+<form method="POST">
+    <div id="rectangle1"></div>
+    <div id="rectangle2"></div>
+    <div id="rectangle3"></div>
+    <div id="rectangle4"></div>
+    <div id="vector1"></div>
+    <div id="vector2"></div>
+    <div id="vector3"></div>
+    <label1><input type="radio" name="dva"/></label1>
+    <label2><input type="radio" name="dva"/></label2>
+    <label3><input type="radio" name="dva"/></label3>
+<form action="handler.php">
+<h1>Профиль</h1>
+<h2>{{ role }}</h2>
+<h3>{{ name_user }}</h3>
+    <h15> контакт для связи: {{ begin_contact }} </h15>
+<h4>Выбрать контакт для связи:</h4>
+<h5>Почта</h5>
+<h6><input type="text" class="text" placeholder="example@mail.com"></h6>
+<h7>Телефон</h7>
+<h8><input type="text" class="text" placeholder="+7-(___)-___-__-__"></h8>
+<h9>Другое</h9>
+<h10><input type="text" class="text" placeholder="Укажите"></h10>
+<h11>Изменение пароля:</h11>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+<form method="POST">
+    <h12><input type="text" name="last_password" class="text" placeholder="Старый пароль"></h12>
+    <h13><input type="text" name="new_password" class="text" placeholder="Новый пароль"></h13>
+    <h14><input type="text" name="rep_new_password" class="text" placeholder="Повторить пароль"></h14>
+        <button class="button1" type="submit">Сохранить</button>
+    </form>
+    <form action="/tasks" method="get">
+<button class="button2" type="submit">Закрыть
+<img src="{{ url_for('static', filename='img/Vector.png') }}" alt="" style="vertical-align:middle">
+    </button>
+    </form>
+</form>
+</form>
+</body>
+</html>

@@ -1,0 +1,291 @@
+body{
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+#rectangle1 {
+    position: absolute;
+    width: 921px;
+    height: 900px;
+    left: 513px;
+    top: 10px;
+
+    background: #C0C0C0;
+    border-radius: 46px;
+    border: solid #000
+}
+
+
+
+
+
+
+
+
+
+#vector1 {
+    position: absolute;
+    width: 920px;
+    height: 0px;
+    left: 514px;
+    top: 100px;
+
+    border: solid #000;
+}
+
+
+
+
+
+
+
+
+
+h1 {
+    position: absolute;
+    width: 249px;
+    height: 37px;
+    left: 835px;
+    top: 20px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    white-space: nowrap;
+    color: #000;
+}
+
+h2 {
+    position: absolute;
+    width: 458px;
+    height: 24px;
+    left: 580px;
+    top: 100px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+
+    color: #000;
+}
+
+h3 {
+    position: absolute;
+    width: 458px;
+    height: 24px;
+    left: 580px;
+    top: 220px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+
+    color: #000;
+}
+
+h4 {
+    position: absolute;
+    width: 454.98px;
+    height: 23.27px;
+    left: 582.39px;
+    top: 340px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 31px;
+
+    color: #000;
+}
+
+h5 {
+    position: absolute;
+    width: 654px;
+    height: 64px;
+    left: 550px;
+    top: 150px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+h6 {
+    position: absolute;
+    width: 833px;
+    height: 189px;
+    left: 545px;
+    top: 490px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+}
+
+h7 {
+    position: absolute;
+    left: 545px;
+    top: 720px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 65px;
+    text-align: center;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+.datetime{
+    position: absolute;
+    width: 622px;
+    height: 46px;
+    left: 550px;
+    top: 290px;
+    border: 1px solid #FFDAB9;
+    padding: 10px 10px 10px 20px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+
+.select{
+    position: absolute;
+    width: 660px;
+    height: 64px;
+    left: 545px;
+    top: 420px;
+    border: 1px solid #FFDAB9;
+    padding: 10px 10px 10px 30px;
+
+    background: #FFDAB9;
+    border-radius: 20px;
+}
+
+.text1 {  #osmotr_zadachi
+    display: inline-block;
+    width: 654px;
+    height: 64px;
+    left: 550px;
+    top: 170px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #FFDAB9;
+    border-radius: 20px;
+    padding: 10px 10px 10px 30px;
+    background: #FFDAB9;
+}
+
+.text2 {  #osmotr_zadachi
+    display: inline-block;
+    overflow-wrap: break-word;
+    border:1px solid green;
+    width: 833px;
+    height: 189px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #FFDAB9;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #FFDAB9;
+}
+
+.text3 {  #osmotr_zadachi
+    display: inline-block;
+    overflow-wrap: break-word;
+    border:1px solid green;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #FFDAB9;
+    border-radius: 40px;
+    padding: 10px 10px 10px 20px;
+    transition: all 0.1s ease-out;
+    background: #FFDAB9;
+}
+
+
+
+
+
+
+
+
+
+.button1 {
+    position: absolute;
+    width: 234px;
+    height: 72px;
+    left: 545px;
+    top: 800px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 65px;
+    text-align: center;
+    color: #000;
+}
+
+.button1:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}
+
+.button2 {
+    position: absolute;
+    width: 340px;
+    height: 72px;
+    left: 1040px;
+    top: 800px;
+
+    background: #FFDAB9;
+    border-radius: 30px;
+
+    font-family: 'Cuprum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 65px;
+    text-align: center;
+    color: #000;
+}
+
+.button2:hover {
+    color: #000;
+    background: #FFDAB9;
+    border: 2px solid #FFDAB9;
+}

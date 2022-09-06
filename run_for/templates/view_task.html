@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/view_task.css') }}">
+    <title>Осмотр задачи</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+    <div id="rectangle7"></div>
+    <div id="rectangle14"></div>
+    <div id="rectangle15"></div>
+    <div id="vector5"></div>
+    <div id="vector6"></div>
+
+<h24>Название Проекта: {{ name_task }}</h24>
+
+<h26>Работа выполнена: {{ from_user_name }}</h26>
+
+<form method="post">
+{% if role == 0 %}
+<button class="button-delete-all" name="del" type="submit" value="all">
+    Удалить у всех
+    <img src="{{ url_for('static', filename='img/корзина.png') }}" alt ="" style="vertical-align:middle">
+</button>
+{% endif %}
+<button class="button3" type="submit" name="del"  value="one">
+удалить задачу
+<img src="{{ url_for('static', filename='img/корзина.png') }}" alt ="" style="vertical-align:middle" >
+</button>
+</form>
+
+<h28> {{ text_task }} </h28>
+
+        <h29>Приклепленная ссылка: </h29>
+    <h30>Статус задачи: {{ status}} </h30>
+
+{% if role == 1 %}
+    <form method="post">
+        <button class="button5" type="submit" name="status" value="read">Прочтена
+
+        </button>
+
+        <button class="button6" type="submit" name="status" value="looking">На проверке
+
+        </button>
+
+        <button class="button7" type="submit" name="status" value="good">Зачтена
+
+        </button>
+
+        <button class="button8" type="submit" name="status" value="bad">Не зачтена
+
+        </button>
+    </form>
+{% endif %}
+<h35>Контакт для связи: {{ from_user_contact }}</h35>
+    <h85>{{ elev }}</h85>
+    {% if role == 0 %}
+    <form method="post">
+<button class="button9" type="submit" name="elev" value="1">Продвинуть задачу ({{ time_lost }})
+    <img src="{{ url_for('static', filename='img/Arrow2.png') }}" alt ="" style="vertical-align:middle">
+</button>
+    </form>
+        {% endif %}
+    <form action="/tasks" method="GET">
+<button class="button10" type="submit">
+    Закрыть
+    <img src="{{ url_for('static', filename='img/Vector.png') }}" alt ="" style="vertical-align:middle">
+</button>
+    </form>
+
+</body>
+</html>
